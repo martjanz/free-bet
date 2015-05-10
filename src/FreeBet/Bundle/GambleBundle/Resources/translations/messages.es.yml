@@ -1,0 +1,7 @@
+menu:
+    main:
+        gambles_list: Mis apuestas
+
+gamble:
+    notice:
+        remove: Apuesta eliminada

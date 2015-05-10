@@ -1,0 +1,11 @@
+fos_user_change_password:
+    title: Cambie su contraseña
+
+profile:
+    show:
+        language: Idioma
+        timezone: Zona horaria
+
+form:
+    new_password: Nueva contraseña
+    new_password_confirmation: Confirme su nueva contraseña

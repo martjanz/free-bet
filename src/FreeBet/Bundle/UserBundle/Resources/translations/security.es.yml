@@ -1,0 +1,39 @@
+login:
+    title: Sign In
+    username: Login
+    password: Password
+    remember_me: Remember me
+    submit: Sign me in
+    register: Register a new membership
+    forgot_password: I forgot my password
+    back: Back to sign in
+
+logout: Logout
+
+registration:
+    title: Register New Membership
+    submit: Sign me up
+    has_account: I already have a membership
+    start_betting: Start Betting
+
+"Bad credentials": Usuario y/o contraseña inválidos.
+
+form:
+    username: "Login"
+    email: "Email"
+    password: "Password"
+    password_confirmation: "Retype password"
+
+resetting:
+    title: Resetting password
+    request:
+        invalid_username: The username or email address "%username%" does not exist.
+        username: "Login or email address"
+        submit: Reset password
+
+fos_user_registration_confirmed.title: Register New Membership
+fos_user_resetting_send_email.title: Resetting password
+fos_user_resetting_check_email.title: Email sent
+fos_user_resetting_reset.title: Forgot password
+reset.title: Forgot password
+reset.request.submit: Save

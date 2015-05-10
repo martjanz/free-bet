@@ -1,0 +1,11 @@
+cart:
+    block:
+        title: Jugada
+        transform: Guardar
+        empty: Debe apostar en al menos un evento guardar su jugada.
+    notice:
+        remove: Apuesta eliminada
+        transform: Apuesta guardada
+    dialog:
+        remove_bet: Eliminará esta apuesta. OK para confirmar.
+        transform: Guardará esta apuesta. OK para confirmar.

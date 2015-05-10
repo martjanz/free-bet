@@ -1,0 +1,108 @@
+language:
+    en: English
+    fr: French
+    es: Español
+
+filter: Filtro
+
+account:
+    title: Mi perfil
+    info: Cuenta
+    member_since: Usuario desde
+    password:
+        modify: Cambiar contraseña
+    profile:
+        edit: Editar perfil
+    organization:
+        info: Su grupo
+        join_date: Entró el %date%
+        name: Nombre
+        none: No pertenece a ningún grupo. Entre en uno para sumar sus victorias con las de sus compañeros.
+        manage: Administrar grupo
+        select: Elegir nuevo grupo
+        create: Crear grupo
+
+account_edit:
+    title: Modificar perfil
+
+profile:
+    flash:
+        updated: Perfil actualizado
+
+change_password:
+    flash:
+        success: Contraseña actualizada
+
+organization:
+    is_manager: Es manager
+    new:
+        title: Crear grupo
+        create: Crear
+        has_organization_warning: You are about to create a new group. You will not be a member of your current group anymore but you will be the manager of the new one
+        new_organization_info: You are about to create a new group. you will automatically be its first member and the only manager.
+        success: The new group was created successfully. You are its manager.
+    item:
+        count: "{0} No member|{1} One member|]1,Inf] %count% members"
+    list:
+        count: "{0} No group|{1} One group|]1,Inf] %count% groups"
+    manage:
+        title: Manage %name%
+        remove_user_success: User remove from group successfully.
+        remove_user_error: Error when trying to remove user from group. Try again or contact an administrator.
+        change_role_success: the role of the selected user has changed successfully.
+        change_role_validation_error: User not complete. Unable to change its role.
+        change_role_error: Error when trying to change the role of the user. Try again or contact an administrator.
+    user:
+        remove: Eliminar
+        downgrade: Remove as manager
+        upgrade: Set as manager
+    choose:
+        title: Select a group
+        has_organization_warning: >
+          You are about to enter a new group.
+          You will not be a member of your current group anymore.
+          All your current bet will still be assigned to your current group.
+        change_group_success: You have change your group successfully
+        change_group_error: Error when trying to change your group. Try again or contact an administrator.
+        slug_filter: Enter name
+        slug: name
+
+my_gamble:
+    title: Mis apuestas
+    submit_date: Submitted on %date%
+    item:
+        count: "{0} No gamble|{1} One gamble|]1,Inf] %count% gambles"
+        type: "{1} Simple|{2} Double|{3} Triple|{4} Quatro|]4,Inf] Multiple"
+        none: No gamble yet.
+    header:
+        day: Día
+        hour: Hora
+        event: Partido
+        type: Tipo
+        result: Resultado
+    view:
+        title: Detalle de apuesta
+        meta_title: Gamble Detail %id%
+        id: "ID de apuesta : %id%"
+        detail: Detalle
+        header:
+            day: Date
+            hour: Hour
+            sport: Sport
+            event: Event
+            type: Type
+            result: Result
+        processing:
+            title: Processing
+            date: Processing date
+            no_date: Not yet processed
+            type: Type
+            number: Number of lines
+            winning: Number of winning lines
+            losing: Number of losing lines
+            no_result: No result yet
+        gain: Winning point
+        back: Atrás
+        delete: Eliminar
+        delete_modal:
+            label: Eliminará su apuesta. OK para confirmar.
