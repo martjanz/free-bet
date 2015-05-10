@@ -1,32 +1,32 @@
-data_reset: The software data will be reset every 2 hours at 15 minutes.
+data_reset: Los datos se reiniciarán cada 2 horas y 15 minutos.
 auth_info: |
-    Authentification :<br />
+    Autentificación :<br />
     <strong>Webmaster : </strong>admin/admin
-    <strong>User : </strong>user/user
+    <strong>Usuario : </strong>user/user
 
 general:
-    back: Back
+    back: Volver
 
 error:
     global:
-        title: Oops! An error occured.
+        title: Ups. Hubo un error.
         text: |
-            We will fix this as soon as possible. Do not hesitate to fill an issue on <a href="https://github.com/jbouzekri/free-bet">Github</a>.
-            Meanwhile, you may <a href="%url%">return to events list</a>.
+            Vamos a solucionarlo a la brevedad. No dudes en cargar un tichet en <a href="https://github.com/martjanz/timba">Github</a>.
+            Mientras tanto podés <a href="%url%">volver al listado de eventos</a>.
     404:
         code: 404
-        title: Oops! Page not found.
+        title: ¡Uhh! Página no encontrada.
         text: |
-            We could not find the page you were looking for.
-            Meanwhile, you may <a href="%url%">return to events list</a>.
+            No encontramos la página que estás buscando.
+            Podés <a href="%url%">volver al listado de eventos</a>.
     403:
         code: 403
-        title: Oops! You are not authorized.
+        title: Epa. No tenés autorización.
         text: |
-            You cannot access this resource or you are trying a forbidden action.
-            Meanwhile, you may <a href="%url%">return to events list</a>.
+            No podés acceder a este recurso o estás intentando hacer algo prohibido.
+            Podés <a href="%url%">volver al listado de eventod</a>.
 
 date:
-    date: Y-m-d
+    date: d-m-Y
     hour: H:i
-    datetime: Y-m-d H:i
+    datetime: d-m-Y H:i

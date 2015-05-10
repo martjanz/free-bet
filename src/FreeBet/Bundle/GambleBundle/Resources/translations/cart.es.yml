@@ -2,7 +2,7 @@ cart:
     block:
         title: Jugada
         transform: Guardar
-        empty: Debe apostar en al menos un evento guardar su jugada.
+        empty: Debe apostar en al menos un evento para poder guardar.
     notice:
         remove: Apuesta eliminada
         transform: Apuesta guardada

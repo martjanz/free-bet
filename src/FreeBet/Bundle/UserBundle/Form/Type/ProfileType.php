@@ -46,6 +46,7 @@ class ProfileType extends ProfileFormType
         $choices = array(
             'en' => $this->translator->trans('language.en'),
             'fr' => $this->translator->trans('language.fr'),
+            'es' => $this->translator->trans('language.es'),
         );
 
         $builder

@@ -1,13 +1,13 @@
 dashboard:
-    title: Statistics
-    link: View gambles
-    winner: "{0} Win|{1} Win|]1,+Inf[ Wins"
-    unprocessed: "{0} Unprocessed|{1} Unprocessed|]1,+Inf[ Unprocessed"
-    loser: "{0} Loss|{1} Loss|]1,+Inf[ Losses"
+    title: Estadísticas
+    link: Ver apuestas
+    winner: "{0} Aciertos|{1} Acierto|]1,+Inf[ Aciertos"
+    unprocessed: "{0} Pendientes|{1} Pendiente|]1,+Inf[ Pendientes"
+    loser: "{0} Errados|{1} Errado|]1,+Inf[ Errados"
     point:
-        number: "{0} 0 Point|{1} 1 Point|]1,+Inf[ %count% Points"
-        gamble: "{0} over 0 gamble since the %date%|{1} over 1 gamble since the %date%|]1,+Inf[ over %count% gambles since the %date%"
+        number: "{0} 0 Puntos|{1} 1 Punto|]1,+Inf[ %count% Puntos"
+        gamble: "{0} Ninguna apuesta realizada|{1} sobre 1 apuesta desde el %date%|]1,+Inf[ sobre %count% apuestas desde el %date%"
 
 menu:
     main:
-        dashboard: Statistics
+        dashboard: Estadísticas

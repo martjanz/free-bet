@@ -16,14 +16,14 @@ competition:
     group: Pool
     final: Knock-out phase
     view:
-        set_result: Set result
+        set_result: Establecer resultado
         header:
             day: Día
             hour: Hora
             result: Resultado
             actions: Acciones
             team: Equipo
-            point: Punto
+            point: Puntos
             diff: Diferencia
     menu:
         title: Torneos

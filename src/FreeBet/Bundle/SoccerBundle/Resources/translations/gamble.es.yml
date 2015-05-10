@@ -1,10 +1,10 @@
-gamble_winner: 1N2
-gamble_winner_N: "null"
+gamble_winner: Resultado simple
+gamble_winner_N: "Empate"
 
-gamble_exact_score: Exact Score
+gamble_exact_score: Resultado exacto
 
 gamble:
-    unavailable: Betting not available yet.
+    unavailable: Apuestas no disponibles aún.
     winner:
-        show_more: See more choices
-        show_less: See less choices
+        show_more: Ver más opciones
+        show_less: Ver menos opciones

@@ -14,5 +14,5 @@ FreeBet\Bundle\UserBundle\Document\User:
                 multiple: true
         language:
             - Choice:
-                choices:  [en, fr]
+                choices:  [en, fr, es]
                 message:  Choose a valid language.

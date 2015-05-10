@@ -1,39 +1,39 @@
 login:
-    title: Sign In
-    username: Login
-    password: Password
-    remember_me: Remember me
-    submit: Sign me in
-    register: Register a new membership
-    forgot_password: I forgot my password
-    back: Back to sign in
+    title: Entrar
+    username: Usuario
+    password: Contraseña
+    remember_me: Recordarme
+    submit: Entrar
+    register: Nuevo usuario
+    forgot_password: Olvidé mi contraseña
+    back: Volver a ingresar
 
-logout: Logout
+logout: Salir
 
 registration:
-    title: Register New Membership
-    submit: Sign me up
-    has_account: I already have a membership
-    start_betting: Start Betting
+    title: Alta de nuevo usuario
+    submit: Registrarme
+    has_account: Ya estoy registrado
+    start_betting: Empezar a apostar
 
 "Bad credentials": Usuario y/o contraseña inválidos.
 
 form:
-    username: "Login"
+    username: "Usuario"
     email: "Email"
-    password: "Password"
-    password_confirmation: "Retype password"
+    password: "Contraseña"
+    password_confirmation: "Reingrese contraseña"
 
 resetting:
-    title: Resetting password
+    title: Blanqueo de contraseña
     request:
-        invalid_username: The username or email address "%username%" does not exist.
-        username: "Login or email address"
-        submit: Reset password
+        invalid_username: El usuario o email "%username%" no existe.
+        username: "Usuario o email"
+        submit: Blanquear contraseña
 
 fos_user_registration_confirmed.title: Register New Membership
-fos_user_resetting_send_email.title: Resetting password
-fos_user_resetting_check_email.title: Email sent
-fos_user_resetting_reset.title: Forgot password
-reset.title: Forgot password
-reset.request.submit: Save
+fos_user_resetting_send_email.title: Blanqueo de contraseña
+fos_user_resetting_check_email.title: Email enviado
+fos_user_resetting_reset.title: Contraseña olvidada
+reset.title: Contraseña olvidada
+reset.request.submit: Guardar
