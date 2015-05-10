@@ -1,0 +1,33 @@
+menu:
+    main:
+        next_events: Próximos partidos
+
+event:
+    list:
+        title: Next events list
+        empty: No event scheduled
+    edit:
+        title: Set result for %name%
+        submit: Save
+
+team_unknown: Unknown
+
+competition:
+    group: Pool
+    final: Knock-out phase
+    view:
+        set_result: Set result
+        header:
+            day: Día
+            hour: Hora
+            result: Resultado
+            actions: Acciones
+            team: Equipo
+            point: Punto
+            diff: Diferencia
+    menu:
+        title: Competitions
+        archives: Archivo
+    archive:
+        title: Archivo
+        ended: "Finalizado : %date%"

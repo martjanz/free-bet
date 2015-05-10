@@ -1,0 +1,11 @@
+fos_user_change_password:
+    title: Change your password
+
+profile:
+    show:
+        language: Language
+        timezone: Timezone
+
+form:
+    new_password: New password
+    new_password_confirmation: Confirm new password
