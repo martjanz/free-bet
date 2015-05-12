@@ -1,0 +1,26 @@
+<div  class="group-match-list">
+    <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th>{{ 'competition.view.header.team'|trans }}</th>
+                <th>{{ 'competition.view.header.point'|trans }}</th>
+                <th>{{ 'competition.view.header.diff'|trans }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ranking in results %}
+                <tr>
+                    <td>
+                        {% include 'FreeBetCompetitionBundle:Event:_event_logo.html.twig' with {
+                            competition: results.competition,
+                            eventName: ranking.name
+                        } %}
+                        {{ ranking.name }}
+                    </td>
+                    <td>{{ ranking.point }}</td>
+                    <td>{{ ranking.diff }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,6 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <h1>{{ match.leftName }} - {{ match.rightName }}</h1>
+    {{ render_all_bet_types(match) }}
+{% endblock %}

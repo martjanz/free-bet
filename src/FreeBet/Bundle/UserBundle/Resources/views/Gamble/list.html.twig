@@ -20,8 +20,8 @@
                 <label class="sr-only" for="filter">Filter</label>
                 <select class="form-control" name="filter" id="filter">
                     <option value="">---</option>
-                    <option value="winner">Winner</option>
-                    <option value="loser">Loser</option>
+                    <option value="winner">{{ 'winner'|trans }}</option>
+                    <option value="loser">{{ 'loser'|trans }}</option>
                 </select>
             </div>
             <button type="submit" name="submit" class="btn btn-primary">{{ 'filter'|trans }}</button>

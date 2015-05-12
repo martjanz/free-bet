@@ -1,0 +1,19 @@
+<div class="group-match-list">
+    <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th>{{ 'competition.view.header.day'|trans }}</th>
+                <th>{{ 'competition.view.header.hour'|trans }}</th>
+                <th>{{ 'competition.view.header.result'|trans }}</th>
+                {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_SUPER_ADMIN') %}
+                    <th>{{ 'competition.view.header.actions'|trans }}</th>
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for event in events %}
+                {% include 'FreeBetSoccerBundle:Match:_results_line.html.twig' with { event: event } %}
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

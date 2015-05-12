@@ -48,7 +48,7 @@ class AppKernel extends Kernel
             new FreeBet\Bundle\StatisticBundle\FreeBetStatisticBundle(),
             new FreeBet\Bundle\SoccerBundle\FreeBetSoccerBundle(),
             new FreeBet\Bundle\SoccerWorldCupBundle\FreeBetSoccerWorldCupBundle(),
-            new FreeBet\Bundle\SoccerLeagueBundle\FreeBetSoccerLeagueBundle()
+            new FreeBet\Bundle\SoccerAmericaCupBundle\FreeBetSoccerAmericaCupBundle(),
         );
 
         $bundles = array_merge($bundles, $freeBetBundles);

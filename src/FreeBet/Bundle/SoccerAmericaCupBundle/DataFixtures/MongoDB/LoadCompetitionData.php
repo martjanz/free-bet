@@ -1,6 +1,6 @@
 <?php
 
-namespace FreeBet\Bundle\SoccerWorldCupBundle\DataFixtures\MongoDB;
+namespace FreeBet\Bundle\SoccerAmericaCupBundle\DataFixtures\MongoDB;
 
 use FreeBet\Bundle\CompetitionBundle\DataFixtures\AbstractCompetitionLoader;
 
@@ -26,11 +26,11 @@ class LoadCompetitionData extends AbstractCompetitionLoader
     {
         return array(
             array(
-                'name' => 'Copa del Mundo 2014',
-                'type' => 'soccer-world-cup',
+                'name' => 'Copa América 2015',
+                'type' => 'soccer-america-cup',
                 'subType' => null,
-                'reference' => 'world-cup-2014',
-                'endDate' => "2015-07-14"
+                'reference' => 'america-cup-2015',
+                'endDate' => "2015-07-04"
             )
         );
     }

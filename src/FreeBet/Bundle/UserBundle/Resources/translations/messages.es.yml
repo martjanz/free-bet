@@ -4,6 +4,8 @@ language:
     es: Español
 
 filter: Filtrar
+winner: Ganados
+loser: Perdidos
 
 account:
     title: Mi perfil
@@ -68,7 +70,7 @@ organization:
         slug: nombre
 
 my_gamble:
-    title: Mis apuestas
+    title: Mis jugadas
     submit_date: Guardadas el %date%
     item:
         count: "{0} Sin jugadas|{1} Una jugada|]1,Inf] %count% jugadas"
@@ -77,12 +79,12 @@ my_gamble:
     header:
         day: Día
         hour: Hora
-        event: Partido
+        event: Partidos
         type: Tipo
         result: Resultado
     view:
-        title: Detalle de apuesta
-        meta_title: Detalle de apuesta %id%
+        title: Detalle de jugada
+        meta_title: Detalle de jugada %id%
         id: "ID de apuesta : %id%"
         detail: Detalle
         header:

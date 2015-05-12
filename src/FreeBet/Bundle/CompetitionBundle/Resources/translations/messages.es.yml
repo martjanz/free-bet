@@ -13,8 +13,8 @@ event:
 team_unknown: Desconocido
 
 competition:
-    group: Pool
-    final: Knock-out phase
+    group: Fase de grupos
+    final: Fase final
     view:
         set_result: Establecer resultado
         header:
