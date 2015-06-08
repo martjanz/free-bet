@@ -8,7 +8,7 @@ A simple PHP application to provide a betting system for sports events.
 You can easily install it in your company to have fun and see who is the best forecaster.
 For now, it focus on the 5 major european soccer league.
 
-You can see a running demo on [free-bet.bouzekri.net english version](http://free-bet.bouzekri.net/en/login). The french translation is also available.
+You can see a running demo on [http://babbage.bitnamiapp.com/ spanish version](http://babbage.bitnamiapp.com/).
 
 Prerequisites
 -------------
@@ -68,8 +68,8 @@ The following vhost is for apache 2.4. Adapt the Require section for old apache 
 Install and configure your symfony2 app
 
     cd /var/www
-    git clone https://github.com/jbouzekri/free-bet.git --recursive
-    cd free-bet
+    git clone https://github.com/martjanz/prode.git --recursive
+    cd prode
     php composer.phar install
     php app/console assetic:dump
     chown www-data:www-data app/{cache,logs} -R
@@ -79,27 +79,27 @@ Install and configure your symfony2 app
 
 Add the virtual host
 
-    vim /etc/apache2/site-available/free-bet.conf
+    vim /etc/apache2/sites-available/prode.conf
 
 
     <VirtualHost *:80>
         ServerName <your hostname>
 
-        DocumentRoot /var/www/free-bet/web
-        <Directory /var/www/free-bet/web>
+        DocumentRoot /var/www/prode/web
+        <Directory /var/www/prode/web>
             # enable the .htaccess rewrites
             AllowOverride All
             Require all granted
         </Directory>
 
-        ErrorLog /var/log/apache2/error-free-bet.log
-        CustomLog /var/log/apache2/access-free-bet.log combined
+        ErrorLog /var/log/apache2/error-prode.log
+        CustomLog /var/log/apache2/access-prode.log combined
     </VirtualHost>
 
 Enable the virtual host
 
     /etc/apache2/sites-enabled
-    ln -s /etc/apache2/sites-available/free-bet.conf
+    ln -s /etc/apache2/sites-available/prode.conf
     service apache2 restart
 
 Go to the hostname configured.
