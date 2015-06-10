@@ -76,7 +76,7 @@ class ExactScoreGamble implements BetTypeInterface
      */
     public function getDifficulty()
     {
-        return 15;
+        return 5;
     }
 
     /**

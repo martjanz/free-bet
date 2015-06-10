@@ -59,6 +59,6 @@ class SimpleScoreCalculator implements ScoreCalculatorInterface
      */
     public function calculateLosingGamble(Gamble $gamble)
     {
-        return 0;
+        return -1 * count($gamble->getBets());
     }
 }
