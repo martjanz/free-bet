@@ -30,7 +30,7 @@ class LoadCompetitionData extends AbstractCompetitionLoader
                 'type' => 'soccer-world-cup',
                 'subType' => null,
                 'reference' => 'world-cup-2014',
-                'endDate' => "2015-07-14"
+                'endDate' => "2014-07-14"
             )
         );
     }
