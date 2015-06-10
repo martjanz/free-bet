@@ -69,7 +69,7 @@ class LoadMatchData extends AbstractDataLoader implements
      */
     protected function createMatch(array $data, $competitionReference)
     {
-        $americaCup2014 = $this->getReference($competitionReference);
+        $americaCup2015 = $this->getReference($competitionReference);
 
         $entity = new Match();
         $entity->setPhaseOrder($data[0]);
@@ -87,7 +87,7 @@ class LoadMatchData extends AbstractDataLoader implements
             $this->addScore($entity, $data);
         }
 
-        $entity->setCompetition($americaCup2014);
+        $entity->setCompetition($americaCup2015);
         $entity->setProcessed(false);
 
         return $entity;

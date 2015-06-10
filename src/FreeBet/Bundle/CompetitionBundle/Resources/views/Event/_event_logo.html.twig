@@ -1,4 +1,4 @@
-{% if competition.type == "soccer-world-cup" %}
+{% if competition.type == "soccer-world-cup" or competition.type == "soccer-america-cup" %}
     <span class="event event-{{ eventName|slugify }}"></span>
 {% else %}
     <span class="team team-{{ eventName|slugify }}"></span>

@@ -5,7 +5,7 @@ namespace FreeBet\Bundle\SoccerAmericaCupBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * FreeBet Soccer America Cup Bundle
+ * FreeBet Soccer World Cup Bundle
  *
  * @author jobou
  */
