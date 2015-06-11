@@ -73,15 +73,15 @@ class LoadUserData extends AbstractDataLoader implements
         return array(
             array(
                 'username' => 'admin',
-                'email' => 'admin@timba.com',
+                'email' => 'martin.anzorena@gmail.com',
                 'password' => 'admin',
                 'profil' => 'ROLE_ADMIN',
                 'reference' => 'user-admin'
             ),
             array(
-                'username' => 'user',
-                'email' => 'user@timba.com',
-                'password' => 'user',
+                'username' => 'prueba',
+                'email' => 'prueba@timba.com',
+                'password' => 'prueba',
                 'reference' => 'user-user'
             )
         );
