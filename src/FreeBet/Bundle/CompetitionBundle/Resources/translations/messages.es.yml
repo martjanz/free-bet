@@ -27,7 +27,7 @@ competition:
             diff: Diferencia
     menu:
         title: Torneos
-        archives: Archivo
+        archives: Historia
     archive:
-        title: Archivo
+        title: Torneos pasados
         ended: "Finalizado : %date%"
