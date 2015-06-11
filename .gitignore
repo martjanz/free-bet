@@ -16,3 +16,6 @@ app/config/parameters.yml
 nbproject
 
 *~
+
+# Temp files
+.DS_Store
