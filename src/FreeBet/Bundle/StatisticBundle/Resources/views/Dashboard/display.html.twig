@@ -80,5 +80,37 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-xs-12">
+            <div class="small-box bg-purple">
+                <div class="inner">
+                    <h3>Tabla de posiciones</h3>
+                        <table class="table table-bordered table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Posición</th>
+                                    <th>Jugador</th>
+                                    <th>A favor</th>
+                                    <th>En contra</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for user in ranking %}
+                                    <tr>
+                                        <td><strong>{{ user.position }}</strong></td>
+                                        <td>{{ user.fullName }}</td>
+                                        <td>{{ user.winning_points }}</td>
+                                        <td>{{ user.losing_points * -1 }}</td>
+                                        <td><strong>{{ user.total_points }}</strong></td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

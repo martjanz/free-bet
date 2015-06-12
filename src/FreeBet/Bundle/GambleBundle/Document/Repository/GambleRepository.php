@@ -164,4 +164,105 @@ class GambleRepository extends DocumentRepository implements GambleRepositoryInt
 
         return $groupResult;
     }
+
+    public function getGambleRankingStats()
+    {
+        $collection = $this->getDocumentManager()->getDocumentCollection($this->getClassName());
+        $db = $collection->getDatabase();
+
+        $dbResult = $db->command(array(
+            'aggregate' => $collection->getName(),
+            'pipeline' => array(
+                array(
+                    '$project' => array(
+                        'user' => '$user',
+                        'point' => '$point',
+                        'winning_point' => array(
+                            '$cond' => array(
+                                'if' => array(
+                                    '$eq' => array(
+                                        '$winner',
+                                        true
+                                    )
+                                ),
+                                'then' => '$point',
+                                'else' => 0
+                            )
+                        ),
+                        'losing_point' => array(
+                            '$cond' => array(
+                                'if' => array(
+                                    '$eq' => array(
+                                        '$winner',
+                                        false
+                                    )
+                                ),
+                                'then' => '$point',
+                                'else' => 0
+                            )
+                        )
+                    )
+                ),
+                array(
+                    '$group' => array(
+                        '_id' => '$user',
+                        'total_gambles' => array(
+                            '$sum' => 1
+                        ),
+                        'total_points' => array(
+                            '$sum' => '$point'
+                        ),
+                        'winning_points' => array(
+                            '$sum' => '$winning_point'
+                        ),
+                        'losing_points' => array(
+                            '$sum' => '$losing_point'
+                        )
+                    ),
+                ),
+                array(
+                    '$sort' => array(
+                        'total_points' => -1,
+                        'winning_points' => -1,
+                        'losing_points' => -1,
+                        'total_gambles' => -1
+                    )
+                )
+            )
+        ));
+
+        $joinedResult = [];
+
+        $rankPosition = 1;
+
+        foreach ($dbResult['result'] as $element) {
+            $mongo_id = $element['_id']['$id'];
+
+            $user = $db->users->findOne(array(
+                '_id' => $mongo_id
+            ));
+            
+            if ($user['ranked'] == null || $user['ranked'] == false) {
+                continue;
+            }
+
+            $newElement['position'] = $rankPosition;
+            $newElement['username'] = $user['username'];
+            $newElement['fullName'] = $user['fullName'];
+
+            $newElement['total_points'] = $element['total_points'];
+            $newElement['winning_points'] = $element['winning_points'];
+            $newElement['losing_points'] = $element['losing_points'];
+
+            array_push($joinedResult, $newElement);
+
+            $rankPosition++;
+        }
+
+        if (!isset($dbResult['ok']) || !isset($joinedResult[0])) {
+            $joinedResult = [];
+        }
+
+        return $joinedResult;
+    }
 }
