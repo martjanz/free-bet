@@ -6,7 +6,7 @@ dashboard:
     loser: "{0} Errados|{1} Errado|]1,+Inf[ Errados"
     point:
         number: "]-Inf,-1[ %count% Puntos|{0} 0 Puntos|{1} 1 Punto|]1,+Inf[ %count% Puntos"
-        gamble: "{0} Ninguna apuesta realizada|{1} sobre 1 jugada desde el %date%|]2,+Inf[ sobre %count% jugadas desde el %date%"
+        gamble: "{0} Ninguna apuesta realizada|{1} sobre 1 jugada desde el %date%|]1,+Inf[ sobre %count% jugadas desde el %date%"
 
 menu:
     main:
