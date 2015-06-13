@@ -125,10 +125,10 @@ class Bet
     public function canDelete()
     {
         if ($this->isEventStarted()) {
-            return true;
+            return false;
         }
 
-        return false;
+        return true;
     }
 
     /**
