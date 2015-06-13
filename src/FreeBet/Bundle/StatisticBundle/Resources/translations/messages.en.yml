@@ -7,6 +7,13 @@ dashboard:
     point:
         number: "]-Inf,0[ %count% Points|{0} 0 Point|{1} 1 Point|]1,+Inf[ %count% Points"
         gamble: "{0} over 0 gamble since the %date%|{1} over 1 gamble since the %date%|]1,+Inf[ over %count% gambles since the %date%"
+    ranking:
+        title: Ranking
+        position: Rank.
+        name: User
+        winning: Wins
+        losing: Losses
+        total: Total
 
 menu:
     main:

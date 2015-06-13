@@ -95,15 +95,15 @@ my_gamble:
             type: Tipo
             result: Resultado
         processing:
-            title: Processing
-            date: Processing date
+            title: Proceso
+            date: Día de procesamiento
             no_date: No procesadas
             type: Tipo
-            number: Number of lines
-            winning: Number of winning lines
-            losing: Number of losing lines
-            no_result: No result yet
-        gain: Winning point
+            number: Total de apuestas
+            winning: Apuestas ganadoras
+            losing: Apuestas perdedoras
+            no_result: Resultado pendiente
+        gain: Puntos obtenidos
         back: Atrás
         delete: Eliminar
         delete_modal:

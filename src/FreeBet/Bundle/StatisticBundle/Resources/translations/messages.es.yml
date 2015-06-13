@@ -7,6 +7,13 @@ dashboard:
     point:
         number: "]-Inf,0[ %count% Puntos|{0} 0 Puntos|{1} 1 Punto|]1,+Inf[ %count% Puntos"
         gamble: "{0} Ninguna apuesta realizada|{1} sobre 1 jugada desde el %date%|]1,+Inf[ sobre %count% jugadas desde el %date%"
+    ranking:
+        title: Tabla de posiciones
+        position: Posición
+        name: Usuario
+        winning: A favor
+        losing: En contra
+        total: Total
 
 menu:
     main:
